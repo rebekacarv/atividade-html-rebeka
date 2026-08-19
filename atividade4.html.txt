@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title> Jornal da Inovação da Escola</title>
+</head>
+<body>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <meta name="description" content="Pagina destinada a novidades e inovações na escola">
+ <title> Novidades e Inovações na Escola</title>
+</head>
+<body>
+  <h1>10 escolas que estão transformando suas realidades</h1>
+
+  <p>Fonte: Porvir, Disponível em: http://porvir.org/. Acesso em Set 2016</p>
+</body>
+</html>
+
+
+
+
+ <!DOCTYPE>
+ <html>
+ <head>
+   <title> Titulo da pagina</title>
+ </head>
+ <body>
+ <h1>Olá mundo!<h1>
+<p>Este é o corpo</p>
+</body>
+</head>
