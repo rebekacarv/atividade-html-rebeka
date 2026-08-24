@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rebeka Vitoria</title>
+</head>
+
+<body>
+
+    <h1>Meu site</h1>
+
+    <p>Este é meu primeiro site.</p>
+
+    <h2>Sobre mim</h2>
+
+    <p>Estou aprendendo HTML.</p>
+
+    <img src="https://i.pinimg.com/236x/7c/21/4a/7c214a60169cfea157950ce17f285854.jpg"
+         alt="Minha imagem"
+         width="300">
+
+    <h2>Meus interesses</h2>
+
+    <ul>
+        <li>Música</li>
+        <li>Filmes</li>
+        <li>Viajar</li>
+        <li>Fotos</li>
+        <li>Tecnologia</li>
+    </ul>
+
+    <h2>Meu site favorito</h2>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <h2>Projetos</h2>
+
+    <ul>
+        <li>To-Do List — lista de tarefas.</li>
+        <li>Calculadora — operações matemáticas básicas.</li>
+        <li>Lista de Filmes — adicionar, remover e pesquisar filmes.</li>
+    </ul>
+
+    <h2>Entre em contato</h2>
+
+Nome: <input type="text" value="Rebeka Vitoria"><br><br>
+Email: <input type="email" value="rebeka2018vitoria@gmail.com"><br><br>
+Telefone: <input type="tel" value="(86) 99574-9077">
+
+</body>
+</html>
