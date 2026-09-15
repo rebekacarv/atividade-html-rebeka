@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+
+   <h2>Formulario de cadastro</h2>
+
+   <form action="#" method="POST">
+
+    <!--campo para nome-->
+    <p>
+      <label for="nome">Nome completo:</label><br>
+      <input type="text"id="nome"name="nome"placeholder="digite seu nome"required>
+      </p>
+
+      <!--Campo para E-mail-->
+      <p>
+        <label
+for="email">E-mail:</label><br>
+       <input type="email"id="email"
+name="email"
+placeholder="seuemail@exemplo.com" required>
+       </p>
+
+       <!Campo para senha-->
+       <p>
+         <label for="senha">Senha:</label><br>
+               <input type="password"id="senha" name="senha"required>
+       </p>
+
+       <!--Campo de seleçao(Dropdown)-->
+       <p>
+         <label for="assunto">Assunto:</label><br>
+            <select id="assunto" name="assunto">
+      <option value="duvida">Duvida</option>
+      <option value="sugestao">sugestao</option>
+      <option value="suporte">suporte</option>
+    </select>
+</p>
+
+
+<!--Caixa de texto grande-->
+<p>
+  <label for="mensagem">Mensagem:</label><br>
+ <textarea id="mensagem" name="mensagem rows="4" cols="30" placeholder="escreva sua mensagem aqui..."></textarea>
+</p>
+
+<!--botao de envio-->
+ <p>
+  <button type="submit>Enviar</button>
+  <button type="reset">Limpar</button>
+ </p>
+
+</form>
+
+
+</body>
+</html>
+
+
+
+ 
+
+
