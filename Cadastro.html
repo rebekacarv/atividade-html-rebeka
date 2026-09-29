@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Cadastro</title>
+
+    <style>
+        .linha {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            padding: 4px;
+        }
+
+        button {
+            padding: 6px 12px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sistema de Cadastro</h1>
+
+    <p>Preencha todos os campos abaixo para concluir seu cadastro.</p>
+
+    <form>
+
+        <!-- ========================= -->
+        <!-- DADOS PESSOAIS -->
+        <!-- ========================= -->
+
+        <fieldset>
+            <legend><b>Dados Pessoais</b></legend>
+
+            <div class="linha">
+
+                <label for="campo_nome">Nome:</label>
+
+                <input
+                    id="campo_nome"
+                    type="text"
+                    placeholder="Digite seu nome aqui"
+                    required
+                >
+
+                <label for="data_nascimento">
+                    Data de Nascimento:
+                </label>
+
+                <input
+                    type="date"
+                    id="data_nascimento"
+                    name="data_nascimento"
+                    required
+                >
+
+            </div>
+
+
+            <div class="linha">
+
+                <label for="campo_cpf">CPF:</label>
+
+                <input
+                    id="campo_cpf"
+                    type="text"
+                    placeholder="000.000.000-00"
+                    required
+                >
+
+                <label for="campo_rg">RG:</label>
+
+                <input
+                    id="campo_rg"
+                    type="text"
+                    placeholder="Digite seu RG"
+                    required
+                >
+
+            </div>
+
+
+            <div class="linha">
+
+                <label for="sexo">Sexo:</label>
+
+                <select id="sexo" name="sexo" required>
+
+                    <option value="Feminino">
+                        Feminino
+                    </option>
+
+                    <option value="Masculino">
+                        Masculino
+                    </option>
+
+                    <option value="Prefiro não informar">
+                        Prefiro não informar
+                    </option>
+
+                </select>
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- ========================= -->
+        <!-- CONTATO -->
+        <!-- ========================= -->
+
+        <fieldset>
+
+            <legend><b>Contato</b></legend>
+
+            <div class="linha">
+
+                <label for="campo_email">
+                    Email:
+                </label>
+
+                <input
+                    id="campo_email"
+                    type="email"
+                    placeholder="Digite um email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="linha">
+
+                <label for="endereco">
+                    Endereço:
+                </label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Digite seu endereço completo"
+                    required
+                >
+
+            </div>
+
+
+            <!-- CIDADE E ESTADO LADO A LADO -->
+
+            <div class="linha">
+
+                <label for="cidade">
+                    Cidade:
+                </label>
+
+                <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Digite sua cidade"
+                    required
+                >
+
+
+                <label for="estado">
+                    Estado:
+                </label>
+
+                <select
+                    id="estado"
+                    name="estado"
+                    required
+                >
+
+                    <option value="">
+                        Selecione
+                    </option>
+
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="linha">
+
+                <label for="telefone">
+                    Telefone:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(99) 99999-9999"
+                    required
+                >
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- ========================= -->
+        <!-- ACESSO -->
+        <!-- ========================= -->
+
+        <fieldset>
+
+            <legend><b>Acesso</b></legend>
+
+            <div class="linha">
+
+                <label for="senha">
+                    Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+
+                <label for="confirmar_senha">
+                    Confirmar Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmar_senha"
+                    name="confirmar_senha"
+                    placeholder="Confirme sua senha"
+                    required
+                >
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- ========================= -->
+        <!-- INFORMAÇÕES ADICIONAIS -->
+        <!-- ========================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Informações Adicionais</b>
+            </legend>
+
+            <div class="linha">
+
+                <label for="profissao">
+                    Profissão:
+                </label>
+
+                <input
+                    type="text"
+                    id="profissao"
+                    name="profissao"
+                    placeholder="Digite sua profissão"
+                >
+
+
+                <label for="como_conheceu">
+                    Como você conheceu?
+                </label>
+
+                <select
+                    id="como_conheceu"
+                    name="como_conheceu"
+                >
+
+                    <option value="">
+                        Selecione
+                    </option>
+
+                    <option value="amigos">
+                        Amigos
+                    </option>
+
+                    <option value="redes_sociais">
+                        Redes Sociais
+                    </option>
+
+                    <option value="google">
+                        Google
+                    </option>
+
+                    <option value="indicacao">
+                        Indicação
+                    </option>
+
+                    <option value="outro">
+                        Outro
+                    </option>
+
+                </select>
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- ========================= -->
+        <!-- TERMOS E PRIVACIDADE -->
+        <!-- ========================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Termos e Privacidade</b>
+            </legend>
+
+            <div>
+
+                <input
+                    type="checkbox"
+                    id="termos"
+                    name="termos"
+                    required
+                >
+
+                <label for="termos">
+
+                    Li e aceito os
+
+                    <a href="#" target="_blank">
+                        Termos de Uso
+                    </a>
+
+                    e a
+
+                    <a href="#" target="_blank">
+                        Política de Privacidade
+                    </a>.
+
+                </label>
+
+            </div>
+
+        </fieldset>
+
+
+        <!-- ========================= -->
+        <!-- BOTÕES -->
+        <!-- ========================= -->
+
+        <br>
+
+        <button type="submit">
+            Finalizar Cadastro
+        </button>
+
+        <button type="reset">
+            Limpar
+        </button>
+
+    </form>
+
+</body>
+
+</html>
